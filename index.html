@@ -25,7 +25,7 @@
             background-image: url('header-bg.jpg');
             background-size: cover;
             background-position: center;
-            height: 100vh;
+            height: 80vh;
             position: relative;
         }
         header::after {
@@ -45,57 +45,42 @@
             transform: translateY(-50%);
         }
         .header-content img {
-            width: 200px;
+            width: 120px;
             margin-bottom: 20px;
         }
         .header-content h1 {
-            font-size: 48px;
+            font-size: 36px;
             color: #76ff03;
         }
         .header-content p {
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
-        .btn {
-            background-color: #76ff03;
-            color: #121212;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        .btn:hover {
-            background-color: #64dd17;
-            transform: scale(1.1);
+            font-size: 18px;
+            margin-bottom: 10px;
         }
         section {
-            padding: 60px 20px;
+            padding: 40px 20px;
             max-width: 1200px;
             margin: 0 auto;
-        }
-        h2 {
-            font-size: 36px;
-            color: #76ff03;
-            margin-bottom: 40px;
             text-align: center;
         }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            align-items: center;
+        h2 {
+            font-size: 30px;
+            color: #76ff03;
+            margin-bottom: 20px;
         }
         .content img {
-            flex: 1 1 500px;
+            width: 80%;
+            max-width: 400px;
             border-radius: 10px;
+            margin-bottom: 10px;
             transition: transform 0.3s;
         }
         .content img:hover {
             transform: scale(1.05);
         }
-        .content div {
-            flex: 1 1 500px;
+        .content p {
+            font-size: 16px;
+            color: #b0b0b0;
+            margin-top: 10px;
         }
         footer {
             background-color: #1e1e1e;
@@ -104,31 +89,30 @@
             padding: 20px;
         }
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (min-width: 768px) {
+            .header-content img {
+                width: 150px;
+            }
             .header-content h1 {
-                font-size: 36px;
+                font-size: 48px;
             }
             .header-content p {
-                font-size: 18px;
+                font-size: 24px;
             }
-            .btn {
-                padding: 10px 20px;
-                font-size: 14px;
-            }
-            .content {
-                flex-direction: column;
+            h2 {
+                font-size: 36px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header with background image and mascot -->
+    <!-- Header -->
     <header>
         <div class="header-content">
             <img src="logo.jpg" alt="EnergyMeme Logo">
             <h1>EnergyMeme</h1>
             <p>The Future of Sustainable Meme Coins </p>
-            <a href="#about" class="btn">Learn More</a>
+            <p>Join the revolution of sustainable meme coins with EnergyMeme!</p>
         </div>
     </header>
 
@@ -136,22 +120,18 @@
     <section id="about">
         <h2>About Us</h2>
         <div class="content">
-            <div>
-                <p>
-                    EnergyMeme is an innovative project combining the power of cryptocurrencies 
-                    with the importance of renewable energy. We're here to make meme coins not 
-                    just fun, but also planet-friendly, with a passionate community and a clear 
-                    goal: building a greener, more exciting future!
-                </p>
-            </div>
             <img src="about-us.jpg" alt="About Us">
+            <p>Our vision combines crypto innovation with renewable energy.</p>
         </div>
     </section>
 
     <!-- Roadmap Section -->
     <section id="roadmap">
         <h2>Roadmap</h2>
-        <img src="roadmap-visual.jpg" alt="Roadmap">
+        <div class="content">
+            <img src="roadmap-visual.jpg" alt="Roadmap">
+            <p>Step-by-step milestones toward a greener future.</p>
+        </div>
     </section>
 
     <!-- Tokenomics Section -->
@@ -159,19 +139,16 @@
         <h2>Tokenomics</h2>
         <div class="content">
             <img src="tokenomics-chart.jpg" alt="Tokenomics">
-            <div>
-                <ul>
-                    <li><strong>50%</strong> Community (Airdrop and rewards)</li>
-                    <li><strong>30%</strong> Growth reserves</li>
-                    <li><strong>20%</strong> Marketing and development</li>
-                </ul>
-            </div>
+            <p>Transparent token distribution for growth and sustainability.</p>
         </div>
     </section>
 
-    <!-- Contact Section with Interactive Buttons -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
+        <div class="content">
+            <p>Connect with us and be part of the EnergyMeme community!</p>
+        </div>
         <div class="social-buttons">
             <a href="https://x.com" class="btn">Twitter/X</a>
             <a href="https://t.me" class="btn">Telegram</a>
